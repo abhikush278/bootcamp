@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const person = {
+  name: "Abhishek",
+  age: 21,
+  education: "Mca",
+  occupation: "Student"
+};
+function Details(person) {
+  for (const property in person) {
+    if (person.hasOwnProperty(property)) {
+      console.log(property+":"+person[property]);
+    }
+  }
+}
+    Details(person);
+
+    </script>
+</body>
+</html>
